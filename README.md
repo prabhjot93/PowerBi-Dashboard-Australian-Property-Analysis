@@ -2,9 +2,10 @@
 
 [Live Dashboard Link](https://www.novypro.com/project/industry-connectmvp-studio-australian-property-analysis-report)
 
-Australia_Property_Analysis_2017_Dataset
-The Australian Property Analysis powerBI dashboard report includes exploring weekly rental values, house values, type of schools, 
-crime rates and transport availability across distinct suburbs(postcodes), cities and states. It compiles analyzed data and delivers easily consumable and actionable insights for users.
+Australia_Property_Analysis_Report
+
+Completed ‘Property Analysis’ project by extracting raw data from multiple Australian property datasets. Standardised data by creating snowflake schema model and automated ETL pipeline. Leveraged Visual Studio for SSRS paginated report.Compiled data from different datasets such as ‘Local Schools’, ‘Local Crime records’, ‘Local Transport data’, ‘Median House value’, and ‘Median Rental value’ to deliver professional PowerBI dashboard.Shared expertise and perspective with stakeholders to make decisions about buying, selling and investing in potential areas across Australia.
+
 
 Key Learnings:
 Load Data, ETL, SSIS, Handling data cleaning, missing information, and duplicates, appending queries, merging tables. Used Power query for data transformations and to have conditional coiumns, custom columns to enter own M language formulas.
