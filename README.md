@@ -54,13 +54,11 @@ return
 
 6.   HouseValue_DYNAMIC_LINK_SSRS = my/ReportServer/Pages/ReportViewer.aspx?%2fAdvanceTaskSSRS%2fReportHouse&rs:Command=Render&state=" & SELECTEDVALUE('DimSuburb'[state])& "&city= & SELECTEDVALUE('DimSuburb'[city]) & "&suburb=" & SELECTEDVALUE('DimSuburb'[suburb])
 
-7.   
-MaxRentalValue = MAX(FactRentalValue[RentalAmount])
+7. MaxRentalValue = MAX(FactRentalValue[RentalAmount])
 
 8. NSWAvgRentalValue = CALCULATE([Avg Rent],FILTER(FactRentalValue,FactRentalValue[state_code]="NSW") )
 
-9. 
-SelectedValue = SELECTEDVALUE(DimSuburb[state]) &"-"& SELECTEDVALUE(DimSuburb[city]) & "-"& SELECTEDVALUE(DimSuburb[suburb])
+9. SelectedValue = SELECTEDVALUE(DimSuburb[state]) &"-"& SELECTEDVALUE(DimSuburb[city]) & "-"& SELECTEDVALUE(DimSuburb[suburb])
 
 10. Top5CitiesByRent = TOPN(5,SUMMARIZE(DimSuburb,"g",KeyCoreMeasures[MaxRentalValue]))
 
