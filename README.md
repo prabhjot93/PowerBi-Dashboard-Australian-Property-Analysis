@@ -44,7 +44,7 @@ DIVIDE([TotalHouseValue],
 
 3.  Avg Rent = AVERAGEX(FactRentalValue,FactRentalValue[RentalAmount])
 
-4. Crime_DYNAMIC_LINK_SSRS = "http://my/ReportServer/Pages/ReportViewer.aspx?%2fAdvanceTaskSSRS%2fReportCrime&rs:Command=Render&state=" & SELECTEDVALUE('DimSuburb'[state])& "&city=" & SELECTEDVALUE('DimSuburb'[city]) & "&suburb=" & SELECTEDVALUE('DimSuburb'[suburb])
+4. Crime_DYNAMIC_LINK_SSRS = http://my/ReportServer/Pages/ReportViewer.aspx?%2fAdvanceTaskSSRS%2fReportCrime&rs:Command=Render&state=" & SELECTEDVALUE('DimSuburb'[state])& "&city=" & SELECTEDVALUE('DimSuburb'[city]) & "&suburb=" & SELECTEDVALUE('DimSuburb'[suburb])
 
 5.   GrandTotalHouseValue = var _TotalValueBySuburbs =
     CALCULATE([TotalHouseValue],
@@ -52,7 +52,7 @@ DIVIDE([TotalHouseValue],
 return 
     _TotalValueBySuburbs
 
-6.   HouseValue_DYNAMIC_LINK_SSRS = "http://my/ReportServer/Pages/ReportViewer.aspx?%2fAdvanceTaskSSRS%2fReportHouse&rs:Command=Render&state=" & SELECTEDVALUE('DimSuburb'[state])& "&city=" & SELECTEDVALUE('DimSuburb'[city]) & "&suburb=" & SELECTEDVALUE('DimSuburb'[suburb])
+6.   HouseValue_DYNAMIC_LINK_SSRS = http://my/ReportServer/Pages/ReportViewer.aspx?%2fAdvanceTaskSSRS%2fReportHouse&rs:Command=Render&state=" & SELECTEDVALUE('DimSuburb'[state])& "&city=" & SELECTEDVALUE('DimSuburb'[city]) & "&suburb=" & SELECTEDVALUE('DimSuburb'[suburb])
 
 7.   
 MaxRentalValue = MAX(FactRentalValue[RentalAmount])
